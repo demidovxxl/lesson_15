@@ -34,6 +34,7 @@ body{
 	border-radius: 4px;
 	letter-spacing: 0.5px;
 	font-weight: 700;
+	/* line-height: 1.25; */
 	padding: 18px 40px;
 	color: #fff;
 	display: inline-block;
@@ -178,12 +179,26 @@ body{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	gap: 20px;
 }
 .advantages-block__item {
 	display: flex;
+	justify-content: center;
 	gap: 12px;
 	align-items: center;
+	flex-grow: 1;
+}
+
+.advantages-block__item:not(:last-child)::after{
+	content: "";
+	width: 8px;
+	height: 8px;
+	flex: 0 0 8px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background: #FF3F3A;
+}
+.advantages-block__item:last-child {
+	flex-grow: 0;
 }
 .advantages-block__number {
 	font-weight: 900;
@@ -194,13 +209,6 @@ body{
 .advantages-block__name {
 	font-weight: 400;
 	line-height: 1.6;
-}
-.advantages-block__circle {
-	width: 8px;
-	height: 8px;
-	flex: 0 0 8px;
-	border-radius: 50%;
-	background: #FF3F3A;
 }
 
 /* ======================================== why ==================================== */
@@ -420,6 +428,7 @@ body{
 	border-radius: 4px;
 	letter-spacing: 0.5px;
 	font-weight: 700;
+	/* line-height: 1.25; */
 	padding: 18px 40px;
 	position: relative;
 	transition: border 0.3s ease 0s;
