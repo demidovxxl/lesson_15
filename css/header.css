@@ -11,7 +11,9 @@
 	align-items: center;
 	gap: 60px;
 }
-.header__logo {}
+.header__logo img{
+	max-width: 130px;
+}
 .header__menu {
 	flex-grow: 1;
 }
