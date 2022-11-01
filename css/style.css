@@ -310,6 +310,9 @@ body{
 .featured-block__top:not(:last-child) {
 	margin-bottom: 60px;
 }
+.top-block__block-title{
+	padding-right: 20px;
+}
 
 .featured-block__cards {
 	display: flex;
